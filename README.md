@@ -4,3 +4,34 @@
 1.在学C语言的，按照正三角和倒三角打印出九九乘法表 
 2.在学51的，在8*8点阵屏上轮流显示：“河南科技大学” 
 3.在学32的，用按键控制,每按一下变一下，使得LED屏显示“我靠NB”“电协NB”“老子最NB”“耶耶耶”
+#include <stdio.h>
+int main()
+{
+    int i,j; 
+    for(i=1;i<=9;i++)
+     {
+        for(j=1;j<=i;j++)
+          {
+     printf("%d*%d=%d",j,i,i*j);
+
+          }
+ printf("\n");
+     }
+ return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+ int i,j;
+ for(i=9;i>=1;i--)
+ {
+ for(j=1;j<=i;j++)
+ {
+ printf("%d*%d=%d",j,i,i*j);
+
+ }
+        printf("\n");
+      }
+     return 0;
+}
